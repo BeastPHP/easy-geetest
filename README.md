@@ -8,9 +8,13 @@ easy极验 PHP SDK
 
     1.PHP >= 7.1
 
+### 安装
+
+    composer require beastphp/easy-geetest
+
 ### 使用说明
 
-    use Guowoo\EasyGeetest\EasyGeetest;
+    use Beast\EasyGeetest\EasyGeetest;
     
     $geetest = new EasyGeetest([
         'captcha_id' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
