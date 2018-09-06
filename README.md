@@ -1,37 +1,37 @@
 # easy-geetest
 
-#### 项目介绍
-极验 PHP SDK
+### 项目介绍
+easy极验 PHP SDK
+由于官方PHP SDK年代久远 不支持Namespace、Composer，于是在官方基础上制作了Easy极验PHP SDK
 
-#### 软件架构
-软件架构说明
+### 环境需求
 
+    1.PHP >= 7.1
 
-#### 安装教程
+### 使用说明
 
-1. xxxx
-2. xxxx
-3. xxxx
+    use Guowoo\EasyGeetest\EasyGeetest;
+    
+    $geetest = new EasyGeetest([
+        'captcha_id' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        'private_key' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    ]);
+    
+    //验证结果
+    $geetest->successValidate(
+        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|xxxxxx',
+        [
+            "user_id" => "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "client_type" => "web",
+            "ip_address" => "127.0.0.1",
+        ]
+    );
 
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
+### 参与贡献
 
 1. Fork 本项目
 2. 新建 Feat_xxx 分支
 3. 提交代码
 4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
