@@ -46,9 +46,9 @@ class Geetest
      * @param array $param
      * @param int $newCaptcha
      *
-     * @return int
+     * @return bool
      */
-    public function proProcess($param, $newCaptcha = 1)
+    public function proProcess(array $param, int $newCaptcha = 1): bool
     {
         $result = false;
         $query = array(
@@ -70,9 +70,11 @@ class Geetest
     }
 
     /**
-     * @param $challenge
+     * @param string $challenge
+     *
+     * @void
      */
-    private function successProcess($challenge)
+    private function successProcess(string $challenge)
     {
         $challenge = md5($challenge . $this->config->get('private_key'));
         $result = array(
@@ -84,6 +86,9 @@ class Geetest
         $this->response = $result;
     }
 
+    /**
+     * @void
+     */
     private function failbackProcess()
     {
         $rnd1 = md5(mt_rand(0, 100));
@@ -119,10 +124,10 @@ class Geetest
     /**
      * 正常模式获取验证结果
      *
-     * @param $challenge
-     * @param $validate
-     * @param $seccode
-     * @param $param
+     * @param string $challenge
+     * @param string $validate
+     * @param string $seccode
+     * @param array $param
      * @param int $jsonFormat
      *
      * @return bool
@@ -163,8 +168,8 @@ class Geetest
     /**
      * 宕机模式获取验证结果
      *
-     * @param $challenge
-     * @param $validate
+     * @param string $challenge
+     * @param string $validate
      *
      * @return bool
      */
@@ -179,12 +184,11 @@ class Geetest
     }
 
     /**
-     * @param $challenge
-     * @param $validate
-     *
+     * @param string $challenge
+     * @param string $validate
      * @return bool
      */
-    private function checkValidate($challenge, $validate)
+    private function checkValidate(string $challenge, string $validate): bool
     {
         if (strlen($validate) != 32) {
             return false;
