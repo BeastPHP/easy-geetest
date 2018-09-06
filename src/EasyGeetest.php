@@ -14,7 +14,7 @@ namespace Guowoo\EasyGeetest;
 use Guowoo\EasyGeetest\Support\Config;
 use Guowoo\EasyGeetest\Traits\Request;
 
-class Geetest
+class EasyGeetest
 {
     use Request;
 
