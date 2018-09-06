@@ -9,7 +9,7 @@
  */
 declare(strict_types=1);
 
-namespace Guowoo\EasyGeetest\Support;
+namespace Beast\EasyGeetest\Support;
 
 class Config
 {

@@ -9,7 +9,7 @@
  */
 declare(strict_types=1);
 
-namespace Guowoo\EasyGeetest\Traits;
+namespace Beast\EasyGeetest\Traits;
 
 use GuzzleHttp\Client;
 use Psr\Http\Message\ResponseInterface;

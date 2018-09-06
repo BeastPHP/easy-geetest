@@ -9,10 +9,10 @@
  */
 declare(strict_types=1);
 
-namespace Guowoo\EasyGeetest;
+namespace Beast\EasyGeetest;
 
-use Guowoo\EasyGeetest\Support\Config;
-use Guowoo\EasyGeetest\Traits\Request;
+use Beast\EasyGeetest\Support\Config;
+use Beast\EasyGeetest\Traits\Request;
 
 class EasyGeetest
 {

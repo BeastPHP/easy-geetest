@@ -1,5 +1,5 @@
 {
-  "name": "guowoo/easy-geetest",
+  "name": "BeastPHP/easy-geetest",
   "description": "The easiest way to use geetest.",
   "type": "library",
   "license": "MIT",
@@ -21,12 +21,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Guowoo\\EasyGeetest\\": "src"
+      "Beast\\EasyGeetest\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Guowoo\\EasyGeetest\\Tests\\": "tests"
+      "Beast\\EasyGeetest\\Tests\\": "tests"
     }
   }
 }
